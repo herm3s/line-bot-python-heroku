@@ -41,7 +41,6 @@ def handle_text_message(event):
         event.reply_token,
         TextSendMessage(text=text)) #reply the same message from user
     
-
 import os
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port=os.environ['PORT'])
